@@ -1,0 +1,30 @@
+[project]
+# Ganti dengan project ID kamu dari Supabase Dashboard (Settings > General > Reference ID)
+id = "YOUR_PROJECT_REF"
+name = "santuyBot"
+
+[api]
+port = 54321
+schemas = ["public"]
+extra_search_path = ["public"]
+
+[db]
+port = 54322
+
+[studio]
+port = 54323
+
+[auth]
+site_url = "https://YOUR_PROJECT_REF.supabase.co"
+
+[auth.email]
+enable_signup = false
+
+[functions.bot-webhook]
+verify_jwt = false
+
+[functions.cron-handler]
+verify_jwt = false
+
+[functions.super-api]
+verify_jwt = false
